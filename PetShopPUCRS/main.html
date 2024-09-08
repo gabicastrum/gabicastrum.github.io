@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>PetShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar col-12 position-fixed navbar-expand-lg bg-body-tertiary" style="z-index: 999;">
+        <div class="container-fluid col-11 m-auto">
+            <a class="navbar-brand" href="#">PetShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Cadastro">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Servicos">Serviços</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div id="carrosel" class="carrosel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/imagens/carrosel-animaiscomendo.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/imagens/animais-banhoetosa.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/imagens/carrosel-ia.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="Cadastro">
+        <div class="row">
+            <label for="exampleFormControlInput1" class="form-label">Nome e Sobrenome do Pai/Mãe de Pet</label>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Primeiro nome" aria-label="Primeiro nome">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Sobrenome">
+            </div>
+        </div>
+        <br>
+        <form class="Cadastro">
+            <div class="col-md-6">
+
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">Estado</label>
+                <select id="inputState" class="form-select">
+                    <option selected> Estados </option>
+                    <option value="AC">Acre (AC)</option>
+                    <option value="AL">Alagoas (AL)</option>
+                    <option value="AP">Amapá (AP)</option>
+                    <option value="AM">Amazonas (AM)</option>
+                    <option value="BA">Bahia (BA)</option>
+                    <option value="CE">Ceará (CE)</option>
+                    <option value="DF">Distrito Federal (DF)</option>
+                    <option value="ES">Espírito Santo (ES)</option>
+                    <option value="GO">Goiás (GO)</option>
+                    <option value="MA">Maranhão (MA)</option>
+                    <option value="MT">Mato Grosso (MT)</option>
+                    <option value="MS">Mato Grosso do Sul (MS)</option>
+                    <option value="MG">Minas Gerais (MG)</option>
+                    <option value="PA">Pará (PA)</option>
+                    <option value="PB">Paraíba (PB)</option>
+                    <option value="PR">Paraná (PR)</option>
+                    <option value="PE">Pernambuco (PE)</option>
+                    <option value="PI">Piauí (PI)</option>
+                    <option value="RJ">Rio de Janeiro (RJ)</option>
+                    <option value="RN">Rio Grande do Norte (RN)</option>
+                    <option value="RS">Rio Grande do Sul (RS)</option>
+                    <option value="RO">Rondônia (RO)</option>
+                    <option value="RR">Roraima (RR)</option>
+                    <option value="SC">Santa Catarina (SC)</option>
+                    <option value="SP">São Paulo (SP)</option>
+                    <option value="SE">Sergipe (SE)</option>
+                    <option value="TO">Tocantins (TO)</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Nome do Pet</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Nome do seu Pet">
+            </div>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Qual é a raça do seu Pet?</option>
+                <option value="caramelo">Caramelo</option>
+                <option value="labrador">Labrador Retriever</option>
+                <option value="golden_retriever">Golden Retriever</option>
+                <option value="bulldog">Bulldog Inglês</option>
+                <option value="beagle">Beagle</option>
+                <option value="poodle">Poodle</option>
+                <option value="chihuahua">Chihuahua</option>
+                <option value="german_shepherd">Pastor Alemão</option>
+                <option value="dachshund">Dachshund</option>
+                <option value="rottweiler">Rottweiler</option>
+                <option value="shih_tzu">Shih Tzu</option>
+                <option value="border_collie">Border Collie</option>
+                <option value="yorkshire_terrier">Yorkshire Terrier</option>
+                <option value="gato_amarelo">Gato Amarelo</option>
+                <option value="gato_tigrado">Gato Tigrado</option>
+                <option value="gato_preto">Gato Preto</option>
+                <option value="gato_branco">Gato Branco Neve</option>
+                <option value="gato_cinza">Gato Cinza Nublado</option>
+                <option value="gato_sialata">Gato Siamês </option>
+                <option value="gato_malhado">Gato Malhado Aventureiro</option>
+                <option value="gato_felix">Gato Félix (Clássico Preto e Branco)</option>
+                <option value="gato_pantufa">Gato Pantufa (Para os Fofinhos de Casa)</option>
+                <option value="gato_riscado">Gato Riscado</option>
+                <option value="gato_pardal">Gato Pardal </option>
+            </select>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Qual é o temperamento do seu Pet?</option>
+                <option value="calmo">Calmo</option>
+                <option value="agitado">Agitado</option>
+                <option value="independente">Independente</option>
+                <option value="sociavel">Sociável</option>
+                <option value="territorial">Territorial</option>
+                <option value="medroso">Medroso</option>
+                <option value="protetor">Protetor</option>
+                <option value="curioso">Curioso</option>
+            </select>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Quero receber novidades no email.
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+    </div>
+    </form>
+    </select>
+    <br>
+    <br>
+    <br>
+    <div id="Produtos">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/imagens/alimento-yorkshire-ju.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ração Royal Canin Yorkshire Terrier</h5>
+                        <p class="card-text">Alimento completo seco para cães adultos e maduros da raça Yorkshire
+                            Terrier –
+                            A partir de 10 meses de idade.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/imagens/alimento-gatos-filhotes-castrados.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ração Royal Canin Gatos Filhotes Castrados</h5>
+                        <p class="card-text">Alimento seco completo para gatos filhotes castrados - De 6 a 12 meses de
+                            idade.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Em estoque</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/imagens/alimento-pastor-alemão.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ração Royal Canin Pastor Alemão </h5>
+                        <p class="card-text">Alimento completo seco para cães filhotes da raça Pastor Alemão – De 2 a 15
+                            meses de idade.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Em estoque</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="Servicos">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/imagens/banhoetosacachorro.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Banho e tosa para Cachorros </h5>
+                        <p class="card-text">Comodidade e carinho para você e seu pet! Oferecemos um serviço prático e
+                            cuidadoso: buscamos seu pet em casa, e o devolvemos limpinho, cheiroso e cheio de amor. Tudo
+                            isso sem que você precise se preocupar com o transporte. Deixe o bem-estar do seu pet por
+                            nossa conta, enquanto você aproveita seu dia!</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Faça o cadastro para mais informações</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/imagens/banhoetosagato.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Banho e tosa para Gatos</h5>
+                        <p class="card-text">Comodidade e carinho para você e seu pet! Oferecemos um serviço prático e
+                            cuidadoso: buscamos seu pet em casa, e o devolvemos limpinho, cheiroso e cheio de amor. Tudo
+                            isso sem que você precise se preocupar com o transporte. Deixe o bem-estar do seu pet por
+                            nossa conta, enquanto você aproveita seu dia!
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Faça o cadastro para mais informações</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/imagens/spapet.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> Dia de SPA para o seu Pet </h5>
+                        <p class="card-text"> Assim como nós, seu pet também merece uma pausa para relaxar e recarregar
+                            as energias! No nosso SPA, ele vai viver uma experiência de puro bem-estar, com um banho
+                            premium no ôfuro de rosas e uma massagem relaxante que vai deixar seu amigo peludo renovado.
+                            E claro, com o banho e tosa impecáveis, ele vai sair não só tranquilo, mas também mais lindo
+                            do que nunca. Transforme o dia do seu pet em um momento especial de cuidado e carinho! </p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-body-secondary">Faça o cadastro para mais informações</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer class="bg-body-tertiary text-center text-lg-start mt-auto">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <h5 class="text-uppercase">PetShop</h5>
+                    <p>
+                        Cuidados de excelência para o seu pet, com carinho e dedicação.
+                        <br>
+                        Nome da aluna: Gabriela de Castro Laurindo
+
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase">Links úteis</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-dark">Sobre nós</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark">Serviços</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase">Siga-nos</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="https://github.com/gabicastrum" class="text-dark">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/gabriela-de-castro-1b27112ab/" class="text-dark">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center p-3 bg-light">
+            © 2024 PetShop PUCRS ADS
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
